@@ -1,5 +1,6 @@
 ﻿using CCDModInstaller.WPF.States.Navigators;
 using CCDModInstaller.WPF.ViewModels;
+using CCDModInstaller.WPF.ViewModels.Factories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +25,8 @@ namespace CCDModInstaller.WPF
     {
         public MainWindow()
         {
-            DataContext = new MainViewModel(new Navigator());
+            IFactoryViewModel factory = new FactoryViewModel(new HomeViewModel());
+            DataContext = new MainViewModel(new Navigator(), factory);
             InitializeComponent();
         }
     }

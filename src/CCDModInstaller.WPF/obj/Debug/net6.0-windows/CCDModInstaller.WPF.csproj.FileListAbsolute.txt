@@ -19,3 +19,7 @@ D:\CCDModInstaller\src\CCDModInstaller.WPF\obj\Debug\net6.0-windows\refint\CCDMo
 D:\CCDModInstaller\src\CCDModInstaller.WPF\obj\Debug\net6.0-windows\CCDModInstaller.WPF.pdb
 D:\CCDModInstaller\src\CCDModInstaller.WPF\obj\Debug\net6.0-windows\CCDModInstaller.WPF.genruntimeconfig.cache
 D:\CCDModInstaller\src\CCDModInstaller.WPF\obj\Debug\net6.0-windows\ref\CCDModInstaller.WPF.dll
+D:\CCDModInstaller\src\CCDModInstaller.WPF\obj\Debug\net6.0-windows\App.baml
+D:\CCDModInstaller\src\CCDModInstaller.WPF\obj\Debug\net6.0-windows\Views\HomeView.g.cs
+D:\CCDModInstaller\src\CCDModInstaller.WPF\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\CCDModInstaller\src\CCDModInstaller.WPF\obj\Debug\net6.0-windows\Views\HomeView.baml

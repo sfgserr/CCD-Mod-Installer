@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\CCDModInstaller\src\CCDModInstaller.WPF\App.xaml
-11407045341
+2541185181
 
-91072457501
+14921653553
 1942007414746
-MainWindow.xaml;
+MainWindow.xaml;Views\HomeView.xaml;
 
 False
 

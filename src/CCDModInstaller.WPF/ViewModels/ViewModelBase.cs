@@ -13,7 +13,7 @@ namespace CCDModInstaller.WPF.ViewModels
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        protected bool Set<T>(ref T field, ref T value, [CallerMemberName] string propertyName = "") 
+        protected bool Set<T>(ref T field, T value, [CallerMemberName] string propertyName = "") 
         {
             if (Equals(field, value)) return false;
             field = value;
