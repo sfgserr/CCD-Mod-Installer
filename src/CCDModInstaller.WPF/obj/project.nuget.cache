@@ -1,8 +1,32 @@
 {
   "version": 2,
-  "dgSpecHash": "Ks6b7TTriasH32ebsh56Mjmvmc/yJKVwbsCNRlfwUHoEW8hj3oJZkRvYnZK55Z3oO2GFi122GN3JbA3WnulaeA==",
+  "dgSpecHash": "WUDsBMmw5fwdpYY7zZ2N3A2VR8nJkgFbc4MNya+UYRQyBvzovme6JZt+rdK1Dy0enBhc5fuNbhleGdULJHTtxg==",
   "success": true,
   "projectFilePath": "D:\\CCDModInstaller\\src\\CCDModInstaller.WPF\\CCDModInstaller.WPF.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\Светлана\\.nuget\\packages\\microsoft.windowsapicodepack-core\\1.1.0\\microsoft.windowsapicodepack-core.1.1.0.nupkg.sha512",
+    "C:\\Users\\Светлана\\.nuget\\packages\\microsoft.windowsapicodepack-shell\\1.1.0\\microsoft.windowsapicodepack-shell.1.1.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.WindowsAPICodePack-Core 1.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.WindowsAPICodePack-Core",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.WindowsAPICodePack-Shell 1.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.WindowsAPICodePack-Shell",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

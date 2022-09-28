@@ -23,3 +23,7 @@ D:\CCDModInstaller\src\CCDModInstaller.WPF\obj\Debug\net6.0-windows\App.baml
 D:\CCDModInstaller\src\CCDModInstaller.WPF\obj\Debug\net6.0-windows\Views\HomeView.g.cs
 D:\CCDModInstaller\src\CCDModInstaller.WPF\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 D:\CCDModInstaller\src\CCDModInstaller.WPF\obj\Debug\net6.0-windows\Views\HomeView.baml
+D:\CCDModInstaller\src\CCDModInstaller.WPF\bin\Debug\net6.0-windows\Microsoft.WindowsAPICodePack.dll
+D:\CCDModInstaller\src\CCDModInstaller.WPF\bin\Debug\net6.0-windows\Microsoft.WindowsAPICodePack.Shell.dll
+D:\CCDModInstaller\src\CCDModInstaller.WPF\bin\Debug\net6.0-windows\Microsoft.WindowsAPICodePack.ShellExtensions.dll
+D:\CCDModInstaller\src\CCDModInstaller.WPF\obj\Debug\net6.0-windows\CCDModInstaller.WPF.csproj.CopyComplete

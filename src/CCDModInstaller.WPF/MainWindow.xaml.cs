@@ -1,20 +1,10 @@
-﻿using CCDModInstaller.WPF.States.Navigators;
+﻿using CCDModInstaller.WPF.States.DialogService;
+using CCDModInstaller.WPF.States.Navigators;
 using CCDModInstaller.WPF.ViewModels;
 using CCDModInstaller.WPF.ViewModels.Factories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.WindowsAPICodePack.Dialogs;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 
 namespace CCDModInstaller.WPF
 {
@@ -25,7 +15,9 @@ namespace CCDModInstaller.WPF
     {
         public MainWindow()
         {
-            IFactoryViewModel factory = new FactoryViewModel(new HomeViewModel());
+            IDialogService dialogService = new DialogService(new CommonOpenFileDialog());
+            HomeViewModel home = new HomeViewModel(dialogService);
+            IFactoryViewModel factory = new FactoryViewModel(home);
             DataContext = new MainViewModel(new Navigator(), factory);
             InitializeComponent();
         }

@@ -11,7 +11,8 @@
                 Height="40"
                 Background="#0B091F"
                 BorderThickness="1"
-                BorderBrush="#939294">
+                BorderBrush="#939294"
+                Margin="0,0,40,50">
 
             <TextBlock Text="{Binding Path}"
                        Margin="20,9,0,0"
@@ -22,12 +23,13 @@
 
         <Button Width="50"
                 Height="40"
-                Margin="303,0,0,0"
+                Margin="263,0,0,50"
                 Background="#0B091F"
                 BorderThickness="1"
                 BorderBrush="#939294"
                 Content=". . ."
                 FontSize="20"
-                Foreground="#939294"/>
+                Foreground="#939294"
+                Command="{Binding ShowDialogCommand}"/>
     </Grid>
 </UserControl>
