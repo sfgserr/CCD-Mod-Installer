@@ -1,4 +1,4 @@
-﻿using CCDModInstaller.WPF.States.DialogService;
+﻿using CCDModInstaller.WPF.States.DialogServices;
 using CCDModInstaller.WPF.ViewModels;
 using System;
 using System.Windows.Input;
@@ -25,7 +25,13 @@ namespace CCDModInstaller.WPF.Commands
 
         public void Execute(object? parameter)
         {
-            _home.Path = _dialogService.SelectFolder();
+            if(parameter is SelectType selectType)
+            {
+                if (selectType == SelectType.Folder)
+                    _home.FolderPath = _dialogService.SelectItem(selectType);
+                else
+                    _home.FilePath = _dialogService.SelectItem(selectType);
+            }
         }
     }
 }

@@ -1,10 +1,11 @@
-﻿using CCDModInstaller.WPF.States.DialogService;
+﻿using CCDModInstaller.WPF.States.DialogServices;
 using CCDModInstaller.WPF.States.Navigators;
 using CCDModInstaller.WPF.ViewModels;
 using CCDModInstaller.WPF.ViewModels.Factories;
 using Microsoft.WindowsAPICodePack.Dialogs;
+using Microsoft.Win32;
 using System.Windows;
-
+using CCDModInstaller.WPF.States.Archiver;
 
 namespace CCDModInstaller.WPF
 {
@@ -15,8 +16,9 @@ namespace CCDModInstaller.WPF
     {
         public MainWindow()
         {
-            IDialogService dialogService = new DialogService(new CommonOpenFileDialog());
-            HomeViewModel home = new HomeViewModel(dialogService);
+            IArchiver archiver = new Archiver();
+            IDialogService dialogService = new DialogService(new CommonOpenFileDialog(), new OpenFileDialog());
+            HomeViewModel home = new HomeViewModel(dialogService, archiver);
             IFactoryViewModel factory = new FactoryViewModel(home);
             DataContext = new MainViewModel(new Navigator(), factory);
             InitializeComponent();

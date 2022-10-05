@@ -10,8 +10,23 @@
             <Setter Property="FontFamily" Value="/Resources/Fonts/OgilenPersonalUse-1G6Re.otf #Ogilen Personal Use"/>
         </Style>
 
+        <Style x:Key="HomeButtonStyle"
+               TargetType="Button">
+
+            <Setter Property="Background" Value="#0B091F"/>
+            <Setter Property="BorderBrush" Value="#939294"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Foreground" Value="#939294"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Content" Value=". . ."/>
+            <Setter Property="Command" Value="{Binding ShowDialogCommand}"/>
+
+        </Style>
+
         <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
             <view:HomeView/>
         </DataTemplate>
+
+        
     </Application.Resources>
 </Application>

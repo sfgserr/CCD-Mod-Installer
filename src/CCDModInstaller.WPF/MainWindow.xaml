@@ -72,23 +72,23 @@
                 BorderThickness="6,40,6,6"
                 Opacity="0.6"
                 BorderBrush="White">
-            
-            <Grid>
-              <Grid Margin="0,-40,0,400">
-                 <StackPanel>
-                     
-                    <RadioButton Style="{StaticResource MenuButtonStyle}"
-                                 Height="40"
-                                 Width="100"
-                                 Margin="0,0,500,0"
-                                 Content="Home"
-                                 FontSize="20"
-                                 Foreground="Black"
-                                 Command="{Binding UpdateViewCommand}"
-                                 CommandParameter="{x:Static nav:ViewType.Home}"/>
 
-                 </StackPanel>
-              </Grid>
+            <Grid>
+                <Grid Margin="0,-40,0,400">
+                    <StackPanel>
+
+                        <RadioButton Style="{StaticResource MenuButtonStyle}"
+                                     Height="40"
+                                     Width="100"
+                                     Margin="0,0,500,0"
+                                     Content="Home"
+                                     FontSize="20"
+                                     Foreground="Black"
+                                     Command="{Binding UpdateViewCommand}"
+                                     CommandParameter="{x:Static nav:ViewType.Home}"/>
+
+                    </StackPanel>
+                </Grid>
                 <ContentControl Content="{Binding CurrentView}"/>
             </Grid>
 

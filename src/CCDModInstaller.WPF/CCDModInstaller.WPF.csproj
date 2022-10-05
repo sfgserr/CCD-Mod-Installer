@@ -19,4 +19,8 @@
     <Resource Include="Resources\Images\City_Car_Driving_logo.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="States\NewFolder\" />
+  </ItemGroup>
+
 </Project>

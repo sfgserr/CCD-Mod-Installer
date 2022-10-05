@@ -1,5 +1,5 @@
 ﻿using CCDModInstaller.WPF.States.Navigators;
-
+using System;
 
 namespace CCDModInstaller.WPF.ViewModels.Factories
 {
@@ -16,7 +16,8 @@ namespace CCDModInstaller.WPF.ViewModels.Factories
         {
             return viewType switch 
             {
-                ViewType.Home => _homeViewModel
+                ViewType.Home => _homeViewModel,
+                _ => throw new ArgumentException()
             };
         }
     }
