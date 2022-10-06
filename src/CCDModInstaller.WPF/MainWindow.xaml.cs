@@ -6,6 +6,7 @@ using Microsoft.WindowsAPICodePack.Dialogs;
 using Microsoft.Win32;
 using System.Windows;
 using CCDModInstaller.WPF.States.Archiver;
+using CCDModInstaller.WPF.States.DirectoryServices;
 
 namespace CCDModInstaller.WPF
 {
@@ -18,7 +19,7 @@ namespace CCDModInstaller.WPF
         {
             IArchiver archiver = new Archiver();
             IDialogService dialogService = new DialogService(new CommonOpenFileDialog(), new OpenFileDialog());
-            HomeViewModel home = new HomeViewModel(dialogService, archiver);
+            HomeViewModel home = new HomeViewModel(dialogService, archiver, new DirectoryService());
             IFactoryViewModel factory = new FactoryViewModel(home);
             DataContext = new MainViewModel(new Navigator(), factory);
             InitializeComponent();

@@ -1,4 +1,5 @@
 ﻿using CCDModInstaller.WPF.States.Archiver;
+using CCDModInstaller.WPF.States.DirectoryServices;
 using CCDModInstaller.WPF.ViewModels;
 using System;
 using System.Windows.Input;
@@ -10,11 +11,15 @@ namespace CCDModInstaller.WPF.Commands
         public event EventHandler? CanExecuteChanged;
 
         private readonly IArchiver _archiver;
+
+        private readonly IDirectoryService _dirService;
+
         private readonly HomeViewModel _home;
 
-        public InstallCommand(IArchiver archiver, HomeViewModel home)
+        public InstallCommand(IArchiver archiver, IDirectoryService dirService, HomeViewModel home)
         {
             _archiver = archiver;
+            _dirService = dirService;
             _home = home;
 
             _home.PropertyChanged += HomeViewModel_PropertyChanged;
@@ -28,6 +33,7 @@ namespace CCDModInstaller.WPF.Commands
         public void Execute(object? parameter)
         {
             _archiver.Unzip(_home.FilePath);
+            _dirService.MoveDirectory(_home.FolderPath);
         }
 
         private void HomeViewModel_PropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
