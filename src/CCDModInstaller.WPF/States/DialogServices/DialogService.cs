@@ -15,7 +15,7 @@ namespace CCDModInstaller.WPF.States.DialogServices
             _fileDialog = fileDialog;
 
             _commonFileDialog.IsFolderPicker = true;
-            _fileDialog.Filter = "Archive|*.zip;*.rar";
+            _fileDialog.Filter = "Archive|*.rar";
         }
 
         public string SelectItem(SelectType selectType)

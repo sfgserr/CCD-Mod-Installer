@@ -1,11 +1,25 @@
 {
   "version": 2,
-  "dgSpecHash": "WUDsBMmw5fwdpYY7zZ2N3A2VR8nJkgFbc4MNya+UYRQyBvzovme6JZt+rdK1Dy0enBhc5fuNbhleGdULJHTtxg==",
+  "dgSpecHash": "b0BMtumpEskmFKF5PLFBMHia9dx02eC0YTLJIpOZvpzdfelR06Mljc8C1qOszZsZAm+SQ1R1Drw0Opl95qZyvA==",
   "success": true,
   "projectFilePath": "D:\\CCDModInstaller\\src\\CCDModInstaller.WPF\\CCDModInstaller.WPF.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Светлана\\.nuget\\packages\\aspose.zip\\22.9.0\\aspose.zip.22.9.0.nupkg.sha512",
+    "C:\\Users\\Светлана\\.nuget\\packages\\lexical.fileprovider\\0.14.4\\lexical.fileprovider.0.14.4.nupkg.sha512",
+    "C:\\Users\\Светлана\\.nuget\\packages\\lexical.fileprovider.abstractions\\0.14.4\\lexical.fileprovider.abstractions.0.14.4.nupkg.sha512",
+    "C:\\Users\\Светлана\\.nuget\\packages\\lexical.fileprovider.sharpcompress\\0.14.4\\lexical.fileprovider.sharpcompress.0.14.4.nupkg.sha512",
+    "C:\\Users\\Светлана\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\2.2.0\\microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\Светлана\\.nuget\\packages\\microsoft.extensions.primitives\\2.2.0\\microsoft.extensions.primitives.2.2.0.nupkg.sha512",
+    "C:\\Users\\Светлана\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\Светлана\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
     "C:\\Users\\Светлана\\.nuget\\packages\\microsoft.windowsapicodepack-core\\1.1.0\\microsoft.windowsapicodepack-core.1.1.0.nupkg.sha512",
-    "C:\\Users\\Светлана\\.nuget\\packages\\microsoft.windowsapicodepack-shell\\1.1.0\\microsoft.windowsapicodepack-shell.1.1.0.nupkg.sha512"
+    "C:\\Users\\Светлана\\.nuget\\packages\\microsoft.windowsapicodepack-shell\\1.1.0\\microsoft.windowsapicodepack-shell.1.1.0.nupkg.sha512",
+    "C:\\Users\\Светлана\\.nuget\\packages\\nunrar\\1.0.1\\nunrar.1.0.1.nupkg.sha512",
+    "C:\\Users\\Светлана\\.nuget\\packages\\sharpcompress\\0.29.0\\sharpcompress.0.29.0.nupkg.sha512",
+    "C:\\Users\\Светлана\\.nuget\\packages\\system.drawing.common\\4.5.1\\system.drawing.common.4.5.1.nupkg.sha512",
+    "C:\\Users\\Светлана\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
+    "C:\\Users\\Светлана\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
+    "C:\\Users\\Светлана\\.nuget\\packages\\system.text.encoding.codepages\\4.5.0\\system.text.encoding.codepages.4.5.0.nupkg.sha512"
   ],
   "logs": [
     {
@@ -24,6 +38,16 @@
       "warningLevel": 1,
       "message": "Package 'Microsoft.WindowsAPICodePack-Shell 1.1.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.WindowsAPICodePack-Shell",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'nunrar 1.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "nunrar",
       "targetGraphs": [
         "net6.0-windows7.0"
       ]

@@ -27,3 +27,11 @@ D:\CCDModInstaller\src\CCDModInstaller.WPF\bin\Debug\net6.0-windows\Microsoft.Wi
 D:\CCDModInstaller\src\CCDModInstaller.WPF\bin\Debug\net6.0-windows\Microsoft.WindowsAPICodePack.Shell.dll
 D:\CCDModInstaller\src\CCDModInstaller.WPF\bin\Debug\net6.0-windows\Microsoft.WindowsAPICodePack.ShellExtensions.dll
 D:\CCDModInstaller\src\CCDModInstaller.WPF\obj\Debug\net6.0-windows\CCDModInstaller.WPF.csproj.CopyComplete
+D:\CCDModInstaller\src\CCDModInstaller.WPF\bin\Debug\net6.0-windows\Aspose.Zip.dll
+D:\CCDModInstaller\src\CCDModInstaller.WPF\bin\Debug\net6.0-windows\NUnrar.dll
+D:\CCDModInstaller\src\CCDModInstaller.WPF\bin\Debug\net6.0-windows\Lexical.FileProvider.dll
+D:\CCDModInstaller\src\CCDModInstaller.WPF\bin\Debug\net6.0-windows\Lexical.FileProvider.Abstractions.dll
+D:\CCDModInstaller\src\CCDModInstaller.WPF\bin\Debug\net6.0-windows\Lexical.FileProvider.SharpCompress.dll
+D:\CCDModInstaller\src\CCDModInstaller.WPF\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\CCDModInstaller\src\CCDModInstaller.WPF\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+D:\CCDModInstaller\src\CCDModInstaller.WPF\bin\Debug\net6.0-windows\SharpCompress.dll

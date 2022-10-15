@@ -8,10 +8,91 @@
     ".NETCoreApp,Version=v6.0": {
       "CCDModInstaller.WPF/1.0.0": {
         "dependencies": {
-          "Microsoft.WindowsAPICodePack-Shell": "1.1.0"
+          "Aspose.Zip": "22.9.0",
+          "Lexical.FileProvider.SharpCompress": "0.14.4",
+          "Microsoft.WindowsAPICodePack-Shell": "1.1.0",
+          "nunrar": "1.0.1"
         },
         "runtime": {
           "CCDModInstaller.WPF.dll": {}
+        }
+      },
+      "Aspose.Zip/22.9.0": {
+        "dependencies": {
+          "System.Drawing.Common": "4.5.1",
+          "System.Text.Encoding.CodePages": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Aspose.Zip.dll": {
+            "assemblyVersion": "22.9.0.0",
+            "fileVersion": "22.9.0.0"
+          }
+        }
+      },
+      "Lexical.FileProvider/0.14.4": {
+        "dependencies": {
+          "Lexical.FileProvider.Abstractions": "0.14.4",
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Lexical.FileProvider.dll": {
+            "assemblyVersion": "0.14.4.0",
+            "fileVersion": "0.14.4.0"
+          }
+        }
+      },
+      "Lexical.FileProvider.Abstractions/0.14.4": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Lexical.FileProvider.Abstractions.dll": {
+            "assemblyVersion": "0.14.4.0",
+            "fileVersion": "0.14.4.0"
+          }
+        }
+      },
+      "Lexical.FileProvider.SharpCompress/0.14.4": {
+        "dependencies": {
+          "Lexical.FileProvider": "0.14.4",
+          "Lexical.FileProvider.Abstractions": "0.14.4",
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.2.0",
+          "SharpCompress": "0.29.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Lexical.FileProvider.SharpCompress.dll": {
+            "assemblyVersion": "0.14.4.0",
+            "fileVersion": "0.14.4.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/2.2.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/2.2.0": {
+        "dependencies": {
+          "System.Memory": "4.5.1",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18315"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/2.0.0": {},
+      "Microsoft.Win32.SystemEvents/4.5.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0"
         }
       },
       "Microsoft.WindowsAPICodePack-Core/1.1.0": {
@@ -36,6 +117,36 @@
             "fileVersion": "1.1.0.0"
           }
         }
+      },
+      "nunrar/1.0.1": {
+        "runtime": {
+          "lib/net40/NUnrar.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          }
+        }
+      },
+      "SharpCompress/0.29.0": {
+        "runtime": {
+          "lib/net5.0/SharpCompress.dll": {
+            "assemblyVersion": "0.29.0.0",
+            "fileVersion": "0.29.0.0"
+          }
+        }
+      },
+      "System.Drawing.Common/4.5.1": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0",
+          "Microsoft.Win32.SystemEvents": "4.5.0"
+        }
+      },
+      "System.Memory/4.5.1": {},
+      "System.Runtime.CompilerServices.Unsafe/4.5.1": {},
+      "System.Text.Encoding.CodePages/4.5.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.0.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+        }
       }
     }
   },
@@ -44,6 +155,62 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Aspose.Zip/22.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vYTgOa1gX6+UuXhof2cMrf4BMyxtzZ1ESU6XrXzNAHHlDCF6yUweXx7xFApGu1c3OhbjkDdF6AqqnQf8CAjIOQ==",
+      "path": "aspose.zip/22.9.0",
+      "hashPath": "aspose.zip.22.9.0.nupkg.sha512"
+    },
+    "Lexical.FileProvider/0.14.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-M/Frbr0qxWLvWMNWmqfOW2JY+dzSgQuLrEIGV/4VR4NS4eLd6WHtRXfLNYSPvAc1iw169mvX0SWqLFJfLnKgFg==",
+      "path": "lexical.fileprovider/0.14.4",
+      "hashPath": "lexical.fileprovider.0.14.4.nupkg.sha512"
+    },
+    "Lexical.FileProvider.Abstractions/0.14.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-66S15aFUhiN1hDCUy+DfVL+PNTZ9JZD6+WHuFApSJyCKK2BaKd34ujLgzk1sBZP9/p+rNgK6kVYrr+WWIMJCsQ==",
+      "path": "lexical.fileprovider.abstractions/0.14.4",
+      "hashPath": "lexical.fileprovider.abstractions.0.14.4.nupkg.sha512"
+    },
+    "Lexical.FileProvider.SharpCompress/0.14.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-S636no3nilyjrOkb7lDIfZoyDe3uVAOBNelNVivZhqWSyAe4t1mk0AfxOLyg93/1JhXCQ3DDEJU6K0ycktZBgg==",
+      "path": "lexical.fileprovider.sharpcompress/0.14.4",
+      "hashPath": "lexical.fileprovider.sharpcompress.0.14.4.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EcnaSsPTqx2MGnHrmWOD0ugbuuqVT8iICqSqPzi45V5/MA1LjUNb0kwgcxBGqizV1R+WeBK7/Gw25Jzkyk9bIw==",
+      "path": "microsoft.extensions.fileproviders.abstractions/2.2.0",
+      "hashPath": "microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-azyQtqbm4fSaDzZHD/J+V6oWMFaf2tWP4WEGIYePLCMw3+b2RQdj9ybgbQyjCshcitQKQ4lEDOZjmSlTTrHxUg==",
+      "path": "microsoft.extensions.primitives/2.2.0",
+      "hashPath": "microsoft.extensions.primitives.2.2.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VdLJOCXhZaEMY7Hm2GKiULmn7IEPFE4XC5LPSfBVCUIA8YLZVh846gtfBJalsPQF2PlzdD7ecX7DZEulJ402ZQ==",
+      "path": "microsoft.netcore.platforms/2.0.0",
+      "hashPath": "microsoft.netcore.platforms.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LuI1oG+24TUj1ZRQQjM5Ew73BKnZE5NZ/7eAdh1o8ST5dPhUnJvIkiIn2re3MwnkRy6ELRnvEbBxHP8uALKhJw==",
+      "path": "microsoft.win32.systemevents/4.5.0",
+      "hashPath": "microsoft.win32.systemevents.4.5.0.nupkg.sha512"
     },
     "Microsoft.WindowsAPICodePack-Core/1.1.0": {
       "type": "package",
@@ -58,6 +225,48 @@
       "sha512": "sha512-8WvLG0TNTylzMB8gnZeZDG68/DsagAF64K35RC2Y/zocHp4e03Uj/kba6egQlq1+0uVv04FpLG+CmENEIN53rg==",
       "path": "microsoft.windowsapicodepack-shell/1.1.0",
       "hashPath": "microsoft.windowsapicodepack-shell.1.1.0.nupkg.sha512"
+    },
+    "nunrar/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vtg0ZYAwzEYAYlfgfevxqG45k2Wzn2WATHhahv/EepPtkshPSCtxK+n3rqN+FZe38lBCHDDrRpJolOOJN71RsQ==",
+      "path": "nunrar/1.0.1",
+      "hashPath": "nunrar.1.0.1.nupkg.sha512"
+    },
+    "SharpCompress/0.29.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-k7iUB0mZWS6eEj6L0PuuxASzjpQvlYKfHJ0JtnHBJFbU3VeQJ4SNQC4eloiYsPbmFrJCJYiqFhV4AZuBXpIXiQ==",
+      "path": "sharpcompress/0.29.0",
+      "hashPath": "sharpcompress.0.29.0.nupkg.sha512"
+    },
+    "System.Drawing.Common/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GiyeGi/v4xYDz1vCNFwFvhz9k1XddOG7VD3jxRqzRBCbTHji+s3HxxbxtoymuK4OadEpgotI8zQ5+GEEH9sUEQ==",
+      "path": "system.drawing.common/4.5.1",
+      "hashPath": "system.drawing.common.4.5.1.nupkg.sha512"
+    },
+    "System.Memory/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sDJYJpGtTgx+23Ayu5euxG5mAXWdkDb4+b0rD0Cab0M1oQS9H0HXGPriKcqpXuiJDTV7fTp/d+fMDJmnr6sNvA==",
+      "path": "system.memory/4.5.1",
+      "hashPath": "system.memory.4.5.1.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Zh8t8oqolRaFa9vmOZfdQm/qKejdqz0J9kr7o2Fu0vPeoH3BL1EOXipKWwkWtLT1JPzjByrF19fGuFlNbmPpiw==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.1",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
+    },
+    "System.Text.Encoding.CodePages/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-S0wEUiKcLvRlkFUXca8uio1UQ5bYQzYgOmOKtCqaBQC3GR9AJjh43otcM32IGsAyvadFTaAMw9Irm6dS4Evfng==",
+      "path": "system.text.encoding.codepages/4.5.0",
+      "hashPath": "system.text.encoding.codepages.4.5.0.nupkg.sha512"
     }
   }
 }

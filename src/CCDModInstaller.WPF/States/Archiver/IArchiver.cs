@@ -3,6 +3,6 @@ namespace CCDModInstaller.WPF.States.Archiver
 {
     interface IArchiver
     {
-        void Unzip(string filePath);
+        void Unrar(string filePath, string folderPath);
     }
 }

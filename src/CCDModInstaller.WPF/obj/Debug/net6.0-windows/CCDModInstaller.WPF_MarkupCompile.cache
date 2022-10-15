@@ -1,20 +1,20 @@
 ﻿CCDModInstaller.WPF
-1.0.0.0
+
 
 winexe
 C#
 .cs
-d:\CCDModInstaller\src\CCDModInstaller.WPF\obj\Debug\net6.0-windows\
+D:\CCDModInstaller\src\CCDModInstaller.WPF\obj\Debug\net6.0-windows\
 CCDModInstaller.WPF
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-d:\CCDModInstaller\src\CCDModInstaller.WPF\App.xaml
+D:\CCDModInstaller\src\CCDModInstaller.WPF\App.xaml
 2541185181
 
-22-1483819568
-197-636998447
+20-1910597559
+2062115342768
 MainWindow.xaml;Views\HomeView.xaml;
 
-True
+False
 
