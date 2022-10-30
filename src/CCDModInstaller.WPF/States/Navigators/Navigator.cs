@@ -7,7 +7,6 @@ namespace CCDModInstaller.WPF.States.Navigators
     class Navigator : INavigator
     {
         private ViewModelBase _currentViewModel;
-
         public ViewModelBase CurrentViewModel
         {
             get => _currentViewModel;
