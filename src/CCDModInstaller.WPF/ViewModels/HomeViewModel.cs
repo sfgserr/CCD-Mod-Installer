@@ -1,5 +1,4 @@
 ﻿using CCDModInstaller.WPF.Commands;
-using CCDModInstaller.WPF.Factories;
 using CCDModInstaller.WPF.States.DialogServices;
 using System.Windows.Input;
 
@@ -10,7 +9,7 @@ namespace CCDModInstaller.WPF.ViewModels
         public HomeViewModel(IDialogService dialogService)
         {
             ShowDialogCommand = new ShowDialogCommand(dialogService, this);
-            InstallCommand = new InstallCommand(this, new ModFactory());
+            InstallCommand = new InstallCommand(this);
         }
 
         private string _folderPath;

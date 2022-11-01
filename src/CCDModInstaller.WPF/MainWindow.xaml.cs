@@ -1,13 +1,9 @@
-﻿using CCDModInstaller.WPF.States.DialogServices;
-using CCDModInstaller.WPF.States.Navigators;
+﻿using System.Windows;
+using CCDModInstaller.WPF.HostBuilders;
 using CCDModInstaller.WPF.ViewModels;
-using CCDModInstaller.WPF.ViewModels.Factories;
-using Microsoft.WindowsAPICodePack.Dialogs;
-using Microsoft.Win32;
-using System.Windows;
-using CCDModInstaller.WPF.States.Archiver;
-using CCDModInstaller.WPF.States.PlayerCarsServices;
-using CCDModInstaller.WPF.Models;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+
 
 namespace CCDModInstaller.WPF
 {
@@ -16,13 +12,20 @@ namespace CCDModInstaller.WPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        private readonly IHost _host;
+
         public MainWindow()
         {
-            IDialogService dialogService = new DialogService(new CommonOpenFileDialog(), new OpenFileDialog());
-            HomeViewModel home = new HomeViewModel(dialogService);
-            IFactoryViewModel factory = new FactoryViewModel(home);
-            DataContext = new MainViewModel(new Navigator(), factory);
+            _host = CreateHostBuilder().Build();
+            DataContext = _host.Services.GetRequiredService<MainViewModel>();
             InitializeComponent();
+        }
+
+        private IHostBuilder CreateHostBuilder(string[] args = null)
+        {
+            return Host.CreateDefaultBuilder(args)
+                       .AddViewModels()
+                       .AddStates();
         }
     }
 }

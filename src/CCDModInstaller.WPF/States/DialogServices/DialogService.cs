@@ -6,14 +6,11 @@ namespace CCDModInstaller.WPF.States.DialogServices
 {
     class DialogService : IDialogService
     {
-        private readonly CommonOpenFileDialog _commonFileDialog;
-        private readonly OpenFileDialog _fileDialog;
+        private readonly CommonOpenFileDialog _commonFileDialog = new CommonOpenFileDialog();
+        private readonly OpenFileDialog _fileDialog = new OpenFileDialog();
 
-        public DialogService(CommonOpenFileDialog commonFileDialog, OpenFileDialog fileDialog)
+        public DialogService()
         {
-            _commonFileDialog = commonFileDialog;
-            _fileDialog = fileDialog;
-
             _commonFileDialog.IsFolderPicker = true;
             _fileDialog.Filter = "Archive|*.rar";
         }

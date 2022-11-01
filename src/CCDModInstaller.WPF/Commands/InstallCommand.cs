@@ -1,5 +1,4 @@
-﻿using CCDModInstaller.WPF.Factories;
-using CCDModInstaller.WPF.Models;
+﻿using CCDModInstaller.WPF.Models;
 using CCDModInstaller.WPF.States.Archiver;
 using CCDModInstaller.WPF.States.PlayerCarsServices;
 using CCDModInstaller.WPF.ViewModels;
@@ -11,13 +10,11 @@ namespace CCDModInstaller.WPF.Commands
     class InstallCommand : ICommand
     {
         public event EventHandler? CanExecuteChanged;
-
-        private readonly IModFactory _modFactory;
+        
         private readonly HomeViewModel _home;
 
-        public InstallCommand(HomeViewModel home, IModFactory modFactory)
+        public InstallCommand(HomeViewModel home)
         {
-            _modFactory = modFactory;
             _home = home;
             _home.PropertyChanged += HomeViewModel_PropertyChanged;
         }
@@ -29,7 +26,7 @@ namespace CCDModInstaller.WPF.Commands
 
         public void Execute(object? parameter)
         {
-            Mod mod = _modFactory.Create(_home.FilePath);
+            Mod mod = new Mod(_home.FilePath);
 
             IArchiver archiver = new Archiver(mod);
             IPlayerCarService playerCarService = new PlayerCarService(mod);

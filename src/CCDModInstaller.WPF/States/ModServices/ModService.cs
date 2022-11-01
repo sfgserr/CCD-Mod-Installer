@@ -11,7 +11,7 @@ namespace CCDModInstaller.WPF.States.ModServices
         {
             using(RarArchive archive = RarArchive.Open(filePath))
             {
-                string keys = GetKeysInOneString(filePath);
+                string keys = GetFirstKey(filePath);
                 return keys.Split("\\").TakeWhile(d => d != "data").ToList();
             }
         }
@@ -28,13 +28,11 @@ namespace CCDModInstaller.WPF.States.ModServices
             }
         }
 
-        private string GetKeysInOneString(string filePath)
+        private string GetFirstKey(string filePath)
         {
             using(RarArchive archive = RarArchive.Open(filePath))
             {
-                string keys = "";
-                archive.Entries.ToList().ForEach(e => keys = keys + e.Key + "\\");
-                return keys;
+                return archive.Entries.FirstOrDefault(e => e.Key.Split("\\").Contains("data")).Key;
             }
         }
     }
