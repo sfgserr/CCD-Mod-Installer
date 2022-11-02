@@ -6,10 +6,10 @@
              xmlns:view="clr-namespace:CCDModInstaller.WPF.Views"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-        <Style x:Key="Font" TargetType="TextBlock">
-            <Setter Property="FontFamily" Value="/Resources/Fonts/OgilenPersonalUse-1G6Re.otf #Ogilen Personal Use"/>
-        </Style>
 
+        <ImageBrush x:Key="ButtonCloseBackground" ImageSource="/Resources/Images/close.png" Stretch="Fill"/>
+        <ImageBrush x:Key="CCDBackground" ImageSource="/Resources/Images/City_Car_Driving_logo.png" Stretch="Fill"/>
+        
         <Style x:Key="HomeButtonStyle"
                TargetType="Button">
 

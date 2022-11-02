@@ -12,9 +12,11 @@ namespace CCDModInstaller.WPF.ViewModels
 
         public MainViewModel(INavigator navigator, IFactoryViewModel factory) 
         {
+            _factory = factory;
             _navigator = navigator;
             _navigator.ViewModelChanged += OnCurrentViewChanged;
-            _factory = factory;
+
+            ShutDownCommand = new ShutDownCommand();
             UpdateViewCommand = new UpdateViewCommand(_factory, _navigator);
             UpdateViewCommand.Execute(ViewType.Home);
         }
@@ -22,6 +24,8 @@ namespace CCDModInstaller.WPF.ViewModels
         public ViewModelBase CurrentView => _navigator.CurrentViewModel;
 
         public ICommand UpdateViewCommand { get; }
+
+        public ICommand ShutDownCommand { get; }
 
         private void OnCurrentViewChanged()
         {

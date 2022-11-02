@@ -1,6 +1,4 @@
-﻿using CCDModInstaller.WPF.Models;
-using CCDModInstaller.WPF.States.Archiver;
-using CCDModInstaller.WPF.States.PlayerCarsServices;
+﻿using CCDModInstaller.WPF.States.Installers;
 using CCDModInstaller.WPF.ViewModels;
 using System;
 using System.Windows.Input;
@@ -12,9 +10,11 @@ namespace CCDModInstaller.WPF.Commands
         public event EventHandler? CanExecuteChanged;
         
         private readonly HomeViewModel _home;
+        private readonly IInstaller _installer;
 
-        public InstallCommand(HomeViewModel home)
+        public InstallCommand(HomeViewModel home, IInstaller installer)
         {
+            _installer = installer;
             _home = home;
             _home.PropertyChanged += HomeViewModel_PropertyChanged;
         }
@@ -26,13 +26,7 @@ namespace CCDModInstaller.WPF.Commands
 
         public void Execute(object? parameter)
         {
-            Mod mod = new Mod(_home.FilePath);
-
-            IArchiver archiver = new Archiver(mod);
-            IPlayerCarService playerCarService = new PlayerCarService(mod);
-
-            archiver.Unrar(_home.FilePath, _home.FolderPath);
-            playerCarService.AddNewCar(_home.FolderPath);
+            _installer.Install(_home.FilePath, _home.FolderPath);
         }
 
         private void HomeViewModel_PropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)

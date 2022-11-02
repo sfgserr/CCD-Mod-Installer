@@ -1,15 +1,16 @@
 ﻿using CCDModInstaller.WPF.Commands;
 using CCDModInstaller.WPF.States.DialogServices;
+using CCDModInstaller.WPF.States.Installers;
 using System.Windows.Input;
 
 namespace CCDModInstaller.WPF.ViewModels
 {
     class HomeViewModel : ViewModelBase
     {
-        public HomeViewModel(IDialogService dialogService)
+        public HomeViewModel(IDialogService dialogService, IInstaller installer)
         {
             ShowDialogCommand = new ShowDialogCommand(dialogService, this);
-            InstallCommand = new InstallCommand(this);
+            InstallCommand = new InstallCommand(this, installer);
         }
 
         private string _folderPath;
